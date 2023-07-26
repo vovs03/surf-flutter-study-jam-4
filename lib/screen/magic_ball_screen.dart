@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+/// MagicBallScreen is interface of App
+/// Has only a picture
+/// and Text as a command for user
 class MagicBallScreen extends StatelessWidget {
   const MagicBallScreen({Key? key}) : super(key: key);
 
@@ -24,8 +27,6 @@ class MagicBallScreen extends StatelessWidget {
               ),
             ),
 
-
-            
             //Image
             Center(
               child: Image.asset('assets/images/ball.png'),
@@ -34,20 +35,16 @@ class MagicBallScreen extends StatelessWidget {
             //Text
             Positioned(
               bottom: 30,
-              
               child: RichText(
                 text: const TextSpan(
                   text: ' Нажмите на шар или \n потрясите телефон',
                   style: TextStyle(
-                    fontWeight: FontWeight.normal,
-                    fontSize: 16,
-                    color: Colors.amber),
+                      fontWeight: FontWeight.normal,
+                      fontSize: 16,
+                      color: Colors.amber),
                 ),
               ),
             ),
-        
-
-
           ],
         ),
       ),
